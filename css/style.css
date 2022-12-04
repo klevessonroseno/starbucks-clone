@@ -1,0 +1,178 @@
+@font-face {
+  font-family: "SoDo Sans";
+  src: url("../fonts/SoDoSans-Regular.woff") format("woff"), url("../fonts/SoDoSans-Bold.woff") format("woff");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 100%;
+  font-weight: normal;
+  font-family: "SoDo Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+:root {
+  --bg-green: #d4e9e2;
+  --color-1: #008248;
+  --color-2: #1e3932;
+  --color-3: rgba(0, 0, 0, 0.87);
+  --margin: 2.5rem
+}
+
+.text {
+  color: var(--color-2);
+  font-size: 1.125rem;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.subtitle {
+  color: var(--color-2);
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+main {
+  margin-bottom: var(--margin);
+}
+
+/* HEADER */
+
+header {
+  box-shadow: 0.1px 0px 2px rgba(0, 0, 0, 0.87);
+  padding: 25px calc((100% - 1270px) / 2);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.header-side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header-side li {
+  margin-right: 1.563rem;
+}
+
+.header-side li:last-child {
+  margin-right: 0;
+}
+
+.header-side li a {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-3);
+}
+
+.uppercase a {
+  text-transform: uppercase;
+
+  font-size: 0.813rem;
+  font-weight: 700;
+  color: var(--color-3);
+}
+
+.uppercase a:hover,
+.uppercase a:focus {
+  color: var(--color-1);
+}
+
+.logo {
+  width: 3.188rem;
+  height: 3.188rem;
+}
+
+.starbucks-historias {
+  width: 7.5rem;
+  height: 2.955rem;
+}
+
+.btn {
+  display: block;
+  border: 0.063rem solid rgba(0, 0, 0, 0.87);
+  padding: 0.563rem 1.125rem;
+  border-radius: 1.125rem;
+  text-align: center;
+  width: max-content;
+}
+
+.btn-light {
+  background-color: transparent;
+  color: var(--color-2);
+}
+
+.btn-dark {
+  background: rgba(0, 0, 0, 0.87);
+}
+
+#text-white {
+  color: white;
+  word-break: keep-all;
+}
+
+/* BANNER */
+
+.banner {
+  display: flex;
+
+  margin-bottom: var(--margin);
+}
+
+/* SUPERINFO */
+
+.superinfo {
+  width: 100%;
+  padding: 25px calc((100% - 827.66px) / 2);
+  background-color: var(--bg-green);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--margin);
+}
+
+/* IMAGEM À ESQUERDA */
+
+.info-with-image {
+  background-color: var(--bg-green);
+  display: flex;
+  align-items: center;
+}
+
+.info-with-image div {
+  flex: 1 1 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-with-image h2,
+p,
+a {
+  width: 70%;
+}
